@@ -11,5 +11,24 @@
 body {
   width: 100vw;
   height: 100vh;
+  color: white;
   background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  color: white;
+  font-size: 32rem;
+  padding: 5px 52px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
