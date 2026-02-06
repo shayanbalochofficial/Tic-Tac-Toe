@@ -20,10 +20,9 @@ body {
 }
 
 h1 {
-  display: flex;
   color: white;
-  font-size: 32rem;
-  padding: 5px 52px;
+  font-size: 32px;
+  padding: 5px 50px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -31,4 +30,15 @@ h1 {
   -o-border-radius: 50px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  border: 2px solid black;
+}
+
+.box {
 }
