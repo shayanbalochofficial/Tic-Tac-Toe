@@ -12,7 +12,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: white;
-  background-color: lightslategrey;
+  background-color: rgb(18, 110, 209);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,4 +41,24 @@ h1 {
 }
 
 .box {
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.box img {
+  width: 75px;
+}
+
+.status {
+  /*tum abhi ruko zara*/
+}
+
+button {
+  cursor: pointer;
 }
