@@ -56,9 +56,44 @@ h1 {
 }
 
 .status {
-  /*tum abhi ruko zara*/
+  margin: 20px 0px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
 }
 
 button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
   cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+button:hover {
+  background-color: rgb(7, 201, 235);
+  color: rgb(0, 0, 0);
+  border: 0.5px solid rgb(1, 46, 54);
 }
