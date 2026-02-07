@@ -27,5 +27,19 @@ init();
 function init() {
   boxEls.forEach((box) => box.addEventListener("click", boxClick));
   restartBtnEl.addEventListener("click", restartGame);
+  statusEl.textContent = `Now ${player} turn`;
   running = true;
+}
+
+function boxClick() {
+  const index = e.target.dataset.index;
+  if (options[index] != "" || !running) {
+    return;
+  }
+  //Elsewise this case=
+}
+
+function updateBox(box, index) {
+  options[index] = player;
+  box.innerHTML = currentPlayer;
 }
