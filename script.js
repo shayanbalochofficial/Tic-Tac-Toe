@@ -38,6 +38,7 @@ function boxClick() {
   }
   //Elsewise this case
   updateBox(e.target, index);
+  checkWinner();
 }
 
 function updateBox(box, index) {
@@ -63,6 +64,22 @@ function checkWinner() {
     if (box1 == box2 && box2 == box3) {
       isWon = true;
       boxEls[condition[0]].classList.add("win");
+      boxEls[condition[1]].classList.add("win");
+      boxEls[condition[2]].classList.add("win");
     }
+  }
+
+  if (isWon) {
+    statusEl.textCotent = `Hurraayyy ${player} won the game `;
+    statusEl.style.color = "green";
+    restartBtnEl.textContent = "Play Again";
+    running = false;
+  } else if (!options.includes("")) {
+    statusEl.textContent = `Oopsies Game Draw Haww...!`;
+    statusEl.style.color = "red";
+    restartBtnEl.textContent = "Play Again";
+    running = false;
+  } else {
+    //  Change Player will be executed but haven't created that fuunc yet
   }
 }
