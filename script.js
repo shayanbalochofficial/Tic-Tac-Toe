@@ -46,8 +46,21 @@ function updateBox(box, index) {
   box.innerHTML = currentPlayer;
 }
 
-// function changePlayer() {
-// }
+function changePlayer() {
+  player = player == "X" ? "O" : "X";
+  currentPlayer = currentPlayer == x ? o : x;
+  statusEl.textContent = `Now ${player} turn`;
+  statusEl.style.color = "black";
+}
+
+function restartGame() {
+  options = ["", "", "", "", "", "", "", "", ""];
+  currentPlayer = x;
+  player = "X";
+  running = true;
+  statusEl.textContent = `Now ${player} turn`;
+  statusEl.style.color = "black";
+}
 
 function checkWinner() {
   let isWon = false;
