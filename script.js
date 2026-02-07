@@ -36,10 +36,33 @@ function boxClick() {
   if (options[index] != "" || !running) {
     return;
   }
-  //Elsewise this case=
+  //Elsewise this case
+  updateBox(e.target, index);
 }
 
 function updateBox(box, index) {
   options[index] = player;
   box.innerHTML = currentPlayer;
+}
+
+// function changePlayer() {
+// }
+
+function checkWinner() {
+  let isWon = false;
+  for (let i = 0; i < win.length; i++) {
+    const condition = win[i];
+    const box1 = options[condition[0]];
+    const box2 = options[condition[1]];
+    const box3 = options[condition[2]];
+
+    if (box1 == "" || box2 == "" || box3 == "") {
+      continue;
+    }
+
+    if (box1 == box2 && box2 == box3) {
+      isWon = true;
+      boxEls[condition[0]].classList.add("win");
+    }
+  }
 }
