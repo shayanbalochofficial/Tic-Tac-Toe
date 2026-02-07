@@ -17,4 +17,15 @@ const win = [
   [2, 4, 6],
 ];
 
-let options = "";
+let options = ["", "", "", "", "", "", "", "", ""];
+let currentPlayer = x;
+let player = "X";
+let running = false;
+
+init();
+//Functin init
+function init() {
+  boxEls.forEach((box) => box.addEventListener("click", boxClick));
+  restartBtnEl.addEventListener("click", restartGame);
+  running = true;
+}
